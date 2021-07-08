@@ -1,0 +1,55 @@
+.auth-nav__list {
+  display: none;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.auth-nav__item {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+  }
+}
+.auth-nav__item:last-child {
+  margin-right: 0px;
+}
+
+.auth-nav__link {
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    transition: color var(--main-duration) var(--main-trans-timing-function);
+    color: var(--primary-text-color);
+  }
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-nav__item:last-child {
+  margin-right: 0;
+}
