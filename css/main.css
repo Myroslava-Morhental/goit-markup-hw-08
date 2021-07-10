@@ -598,6 +598,18 @@ img {
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-team__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team__item {
+    flex-basis: calc((100% -120px) / 4);
+  }
+}
+
 .section-team__card {
   text-align: center;
   margin-bottom: 30px;
@@ -605,18 +617,6 @@ img {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (min-width: 768px) {
-  .section-team__card {
-    flex-basis: calc((100% - 60px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-team__card {
-    flex-basis: calc(100% / 4 - 30px);
-  }
 }
 
 .section-team__text {
@@ -690,11 +690,20 @@ img {
 }
 
 .clients-section {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-section .clients-section {
+    padding-top: 94px;
+  }
 }
 
 .clients-section__list {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
 }
 
 .clients-section .section-title {
@@ -705,13 +714,33 @@ img {
   line-height: 1.2;
 }
 
+.clients-section__item {
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 2);
+}
+
+.clients-section__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-section__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-section__item {
+    flex-basis: calc((100% - 180px) / 6);
+  }
+}
+
 .clients-section__link {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
   height: 92px;
   transition: border-color var(--main-duration) var(--main-trans-timing-function);
 }
@@ -736,10 +765,6 @@ img {
   border-color: var(--accent-color);
 }
 
-.clients-section__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -747,11 +772,18 @@ img {
 }
 
 .footer__container {
-  display: flex;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+  }
 }
 
 .footer__container-address {
-  margin-right: 70px;
+  margin-right: 0;
 }
 
 .footer__address {
@@ -763,6 +795,7 @@ img {
 }
 
 .footer__title {
+  margin-top: 60px;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.17;
