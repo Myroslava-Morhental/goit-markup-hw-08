@@ -1,12 +1,20 @@
 .footer__form-field {
   position: relative;
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .footer__form-subscribe-field {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+
+  margin-bottom: 20px;
+
+  // width:358px
 
   background-color: var(--secondary-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
