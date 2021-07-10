@@ -179,9 +179,11 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section-services">
+      <section class="section-services">
         <div class="section-services__container container">
-          <h2 class="section-services__title section-title">Чем мы занимаемся</h2>
+          <h2 class="section-services__title section-title">
+            Чем мы занимаемся
+          </h2>
           <ul class="section-services__list list">
             <li class="section-services__item">
               <div class="section-services__img-thumb">
@@ -192,7 +194,9 @@
                 />
               </div>
               <div class="section-services__service-thumb">
-                <h3 class="section-services-thumb-title">Десктопные приложения</h3>
+                <h3 class="section-services-thumb-title">
+                  Десктопные приложения
+                </h3>
               </div>
             </li>
             <li class="section-services__item">
@@ -204,7 +208,9 @@
                 />
               </div>
               <div class="section-services__service-thumb">
-                <h3 class="section-services-thumb-title">Мобильные приложения</h3>
+                <h3 class="section-services-thumb-title">
+                  Мобильные приложения
+                </h3>
               </div>
             </li>
             <li class="section-services__item">
@@ -216,7 +222,9 @@
                 />
               </div>
               <div class="section-services__service-thumb">
-                <h3 class="section-services-thumb-title">Дизайнерские решения</h3>
+                <h3 class="section-services-thumb-title">
+                  Дизайнерские решения
+                </h3>
               </div>
             </li>
           </ul>
@@ -228,12 +236,65 @@
           <ul class="section-team__list list">
             <li сlass="section-team__item">
               <div class="section-team__card">
-                <img
-                  src="./images/img_team1.jpg"
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/mobile/img-phone-1.webp    1x,
+                      ./images/team/mobile/img-phone-1@2x.webp 2x
+                    "
+                    media="(min-width:480px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mobile/img1-phone.jpg    1x,
+                      ./images/team/mobile/img1-phone@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/img-tablet-1.webp    1x,
+                      ./images/team/tablet/img-tablet-1@2x.webp 2x
+                    "
+                    media="(min-width:768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/img1-tablet.jpg    1x,
+                      ./images/team/tablet/img1-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/desktop/img-dt-1.webp    1x,
+                      ./images/team/desktop/img-dt-1@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/desktop/img-dt1.jpg    1x,
+                      ./images/team/desktop/img-dt1@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                  src="./images/team/desktop/img-dt1.jpg"
                   alt="Игорь Демьяненко"
-                  width="270"
                 />
-                <h3 class="section-team__subtitle section-subtitle">Игорь Демьяненко</h3>
+                </picture>
+                
+                <h3 class="section-team__subtitle section-subtitle">
+                  Игорь Демьяненко
+                </h3>
                 <p class="section-team__text">Product Designer</p>
                 <ul class="section-team__social-links-list list">
                   <li class="section-team__social-link-item">
@@ -269,12 +330,65 @@
             </li>
             <li сlass="section-team__item">
               <div class="section-team__card">
-                <img
-                  src="./images/img_team2.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                />
-                <h3 class="section-team__subtitle section-subtitle">Ольга Репина</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/mobile/img-phone-2.webp    1x,
+                      ./images/team/mobile/img-phone-2@2x.webp 2x
+                    "
+                    media="(min-width:480px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mobile/img2-phone.jpg    1x,
+                      ./images/team/mobile/img2-phone@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/img-tablet-2.webp    1x,
+                      ./images/team/tablet/img-tablet-2@2x.webp 2x
+                    "
+                    media="(min-width:768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/img2-tablet.jpg    1x,
+                      ./images/team/tablet/img2-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/desktop/img-dt-2.webp    1x,
+                      ./images/team/desktop/img-dt-2@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/desktop/img-dt2.jpg    1x,
+                      ./images/team/desktop/img-dt2@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team/desktop/img-dt2.jpg"
+                    alt="Ольга Репина"
+                    class="team-section__img img"
+                  />
+                </picture>
+                <h3 class="section-team__subtitle section-subtitle">
+                  Ольга Репина
+                </h3>
                 <p class="section-team__text">Frontend Developer</p>
                 <ul class="section-team__social-links-list list">
                   <li class="section-team__social-link-item">
@@ -310,12 +424,64 @@
             </li>
             <li сlass="section-team__item">
               <div class="section-team__card">
-                <img
-                  src="./images/img_team3.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                />
-                <h3 class="section-team__subtitle section-subtitle">Николай Тарасов</h3>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/mobile/img-phone-3.webp    1x,
+                      ./images/team/mobile/img-phone-3@2x.webp 2x
+                    "
+                    media="(min-width:480px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mobile/img3-phone.jpg    1x,
+                      ./images/team/mobile/img3-phone@2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/img-tablet-3.webp    1x,
+                      ./images/team/tablet/img-tablet-3@2x.webp 2x
+                    "
+                    media="(min-width:768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/img3-tablet.jpg    1x,
+                      ./images/team/tablet/img3-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/desktop/img-dt-3.webp    1x,
+                      ./images/team/desktop/img-dt-3@2x.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/desktop/img-dt3.jpg    1x,
+                      ./images/team/desktop/img-dt3@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team/desktop/img-dt3.jpg"
+                    alt="Николай Тарасов"
+                    class="team-section__img img"
+                  />
+                </picture>
+                <h3 class="section-team__subtitle section-subtitle">
+                  Николай Тарасов
+                </h3>
                 <p class="section-team__text">Marketing</p>
                 <ul class="section-team__social-links-list list">
                   <li class="section-team__social-link-item">
@@ -351,12 +517,18 @@
             </li>
             <li сlass="section-team__item">
               <div class="section-team__card">
-                <img
-                  src="./images/img_team4.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                />
-                <h3 class="section-team__subtitle section-subtitle">Михаил Ермаков</h3>
+                <picture>
+                  <source srcset="./images/team/mobile/img-phone-4.webp 1x, ./images/team/mobile/img-phone-4@2x.webp 2x" media="(min-width:480px)" type="image/webp" />
+                  <source srcset="./images/team/mobile/img4-phone.jpg 1x, ./images/team/mobile/img4-phone@2x.jpg 2x" media="(min-width:480px)" type="image/jpeg" />
+                  <source srcset="./images/team/tablet/img-tablet-4.webp 1x, ./images/team/tablet/img-tablet-4@2x.webp 2x" media="(min-width:768px)" type="image/webp" />
+                  <source srcset="./images/team/tablet/img4-tablet.jpg 1x, ./images/team/tablet/img4-tablet@2x.jpg 2x" media="(min-width:768px)" type="image/jpeg" />
+                  <source srcset="./images/team/desktop/img-dt-4.webp 1x, ./images/team/desktop/img-dt-4@2x.webp 2x" media="(min-width:1200px)" type="image/webp" />
+                  <source srcset="./images/team/desktop/img-dt4.jpg 1x, ./images/team/desktop/img-dt4@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg" />
+                  <img src="./images/team/desktop/img-dt4.jpg"  
+                  alt="Михаил Ермаков" class="team-section__img img" />
+                <h3 class="section-team__subtitle section-subtitle">
+                  Михаил Ермаков
+                </h3>
                 <p class="section-team__text">UI Designer</p>
                 <ul class="section-team__social-links-list list">
                   <li class="section-team__social-link-item">
@@ -393,7 +565,7 @@
           </ul>
         </div>
       </section>
-      <section class="clients-section section">
+      <!-- <section class="clients-section section">
         <div class="clients-section__container container">
           <h2 class="clients-section__title section-title">Постоянные клиенты</h2>
           <ul class="clients-section__list list">
@@ -583,7 +755,10 @@
 </html>
     </main>
   </body>
-</html> -->
+</html>
+    </main>
+  </body>
+</html>  -->
     </main>
   </body>
 </html>
