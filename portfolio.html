@@ -19,14 +19,16 @@
   <body>
     <header class="header">
       <div class="container main-nav">
+        <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
         <nav class="nav-container">
-          <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="" class="site-nav__link link current">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link current link"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link link">Контакты</a>
@@ -51,6 +53,24 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-button is-open data-menu-button">
+          <svg
+            class="menu-icon"
+            width="40px"
+            height="40px"
+            aria-expended="false"
+            aria-label="mobile-menu"
+          >
+            <use
+              class="menu-icon-open"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-icon-close"
+              href="./images/sprite.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -87,11 +107,61 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project1.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio1.webp    1x,
+                        ./images/portfolio/desktop/portfolio1@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio1.jpg    1x,
+                        ./images/portfolio/desktop/portfolio1@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio1.webp    1x,
+                        ./images/portfolio/tablet/portfolio1@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio1.jpg    1x,
+                        ./images/portfolio/tablet/portfolio1@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio1.webp    1x,
+                        ./images/portfolio/mobile/portfolio1@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio1.jpg    1x,
+                        ./images/portfolio/mobile/portfolio1@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio1.jpg"
+                      alt="Технокряк"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -112,11 +182,62 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project2.jpg"
-                    alt="Два парня"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio2.webp    1x,
+                        ./images/portfolio/desktop/portfolio2@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio2.jpg    1x,
+                        ./images/portfolio/desktop/portfolio2@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio2.webp    1x,
+                        ./images/portfolio/tablet/portfolio2@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio2.jpg    1x,
+                        ./images/portfolio/tablet/portfolio2@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio2.webp    1x,
+                        ./images/portfolio/mobile/portfolio2@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio2.jpg    1x,
+                        ./images/portfolio/mobile/portfolio2@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/desktop/portfolio2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -137,11 +258,61 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project3.jpg"
-                    alt="Надпись ресторана"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio3.webp    1x,
+                        ./images/portfolio/desktop/portfolio3@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio3.jpg    1x,
+                        ./images/portfolio/desktop/portfolio3@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio3.webp    1x,
+                        ./images/portfolio/tablet/portfolio3@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio3.jpg    1x,
+                        ./images/portfolio/tablet/portfolio3@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio3.webp    1x,
+                        ./images/portfolio/mobile/portfolio3@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio3.jpg    1x,
+                        ./images/portfolio/mobile/portfolio3@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio3.jpg"
+                      alt="Ресторан Seafood"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -162,11 +333,61 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project4.jpg"
-                    alt="Наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio4.webp    1x,
+                        ./images/portfolio/desktop/portfolio4@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio4.jpg    1x,
+                        ./images/portfolio/desktop/portfolio4@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio4.webp    1x,
+                        ./images/portfolio/tablet/portfolio4@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio4.jpg    1x,
+                        ./images/portfolio/tablet/portfolio4@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio4.webp    1x,
+                        ./images/portfolio/mobile/portfolio4@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio4.jpg    1x,
+                        ./images/portfolio/mobile/portfolio4@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio4.jpg"
+                      alt="Проект Prime"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -187,11 +408,61 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project5.jpg"
-                    alt="Две коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio5.webp    1x,
+                        ./images/portfolio/desktop/portfolio5@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio5.jpg    1x,
+                        ./images/portfolio/desktop/portfolio5@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio5.webp    1x,
+                        ./images/portfolio/tablet/portfolio5@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio5.jpg    1x,
+                        ./images/portfolio/tablet/portfolio5@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio5.webp    1x,
+                        ./images/portfolio/mobile/portfolio5@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio5.jpg    1x,
+                        ./images/portfolio/mobile/portfolio5@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio5.jpg"
+                      alt="Проект Boxes"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -212,11 +483,61 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project6.jpg"
-                    alt="Компьютер"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio6.webp    1x,
+                        ./images/portfolio/desktop/portfolio6@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio6.jpg    1x,
+                        ./images/portfolio/desktop/portfolio6@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio6.webp    1x,
+                        ./images/portfolio/tablet/portfolio6@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio6.jpg    1x,
+                        ./images/portfolio/tablet/portfolio6@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio6.webp    1x,
+                        ./images/portfolio/mobile/portfolio6@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio6.jpg    1x,
+                        ./images/portfolio/mobile/portfolio6@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio6.jpg"
+                      alt="Inspiration has no Borders"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -237,11 +558,61 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project7.jpg"
-                    alt="Журнал"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio7.webp    1x,
+                        ./images/portfolio/desktop/portfolio7@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio7.jpg    1x,
+                        ./images/portfolio/desktop/portfolio7@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio7.webp    1x,
+                        ./images/portfolio/tablet/portfolio7@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio7.jpg    1x,
+                        ./images/portfolio/tablet/portfolio7@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio7.webp    1x,
+                        ./images/portfolio/mobile/portfolio7@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio7.jpg    1x,
+                        ./images/portfolio/mobile/portfolio7@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio7.jpg"
+                      alt="Издание Limited Edition"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -262,11 +633,61 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project8.jpg"
-                    alt="Ярлык"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio8.webp    1x,
+                        ./images/portfolio/desktop/portfolio8@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio8.jpg    1x,
+                        ./images/portfolio/desktop/portfolio8@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio8.webp    1x,
+                        ./images/portfolio/tablet/portfolio8@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio8.jpg    1x,
+                        ./images/portfolio/tablet/portfolio8@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio8.webp    1x,
+                        ./images/portfolio/mobile/portfolio8@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio8.jpg    1x,
+                        ./images/portfolio/mobile/portfolio8@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio8.jpg"
+                      alt="Проект LAB"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -287,11 +708,62 @@
             <li class="section-projects__projects-item">
               <a href="" class="section-projects__link link">
                 <div class="section-projects__img">
-                  <img
-                    src="./images/img_project9.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio9.webp    1x,
+                        ./images/portfolio/desktop/portfolio9@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio9.jpg    1x,
+                        ./images/portfolio/desktop/portfolio9@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio9.webp    1x,
+                        ./images/portfolio/tablet/portfolio9@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio9.jpg    1x,
+                        ./images/portfolio/tablet/portfolio9@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio9.webp    1x,
+                        ./images/portfolio/mobile/portfolio9@2x.webp 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio9.jpg    1x,
+                        ./images/portfolio/mobile/portfolio9@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfolio9.jpg"
+                      alt="Проект LAB"
+                      class="portfolio-flex__img"
+                    />
+                  </picture>
+
                   <div class="section-projects__overlay">
                     <p class="section-projects__text">
                       Технокряк это современная площадка распространения
@@ -331,7 +803,6 @@
             </div>
           </address>
         </div>
-
         <div class="footer__social-links">
           <h3 class="footer__title">присоединяйтесь</h3>
           <ul class="footer__social-links-list list">
@@ -351,7 +822,7 @@
             </li>
             <li class="footer__social-link-item">
               <a href="#" class="footer__social-link">
-                <svg class="section-team__icon">
+                <svg class="footer__icon">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -366,7 +837,9 @@
           </ul>
         </div>
         <div class="footer__form">
-          <h3 class="footer__title">Подпишитесь на рассылку</h3>
+          <h3 class="footer__form-title footer__title">
+            Подпишитесь на рассылку
+          </h3>
           <form class="footer__form-subscribe">
             <div class="footer__form-field">
               <input

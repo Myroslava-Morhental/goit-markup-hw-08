@@ -3,27 +3,23 @@
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 
-  @media screen and (min-width: 768px) {
-    padding-right: 76px;
-    padding-left: 76px;
-  }
-
   &__container {
     display: block;
     text-align: center;
+    // width: 100%;
 
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: left;
     }
   }
 
   &__container-address {
     margin-right: 0;
-
-    // @media screen and (min-width: 768px) {
-    //   margin-right: 70px;
-    // }
   }
 
   &__address {
@@ -52,12 +48,12 @@
     margin-right: 0px;
 
     @media screen and (min-width: 768px) {
-      margin-right: 0;
+      margin-right: 0px;
     }
 
-    @media screen and (min-width: 1200px) {
-      margin-right: 93px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   margin-right: 93px;
+    // }
   }
 }
 

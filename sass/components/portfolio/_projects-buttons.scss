@@ -21,10 +21,19 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+.section-projects__button-item + .section-projects__button-item {
+  margin-bottom: 8px;
+}
 
 .section-projects__buttons-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section-projects__button-item:not(:last-child) {
