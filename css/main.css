@@ -644,6 +644,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-team__list {
+    margin-right: -15px;
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team__list {
     margin-right: -30px;
     margin-bottom: -30px;
   }
@@ -652,9 +659,17 @@ img {
 .section-team__item {
   margin-bottom: 30px;
   margin-right: 0;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
+  .section-team__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .section-team__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -662,7 +677,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-team__item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 45px) / 2);
   }
 }
 
@@ -673,6 +688,7 @@ img {
 }
 
 .section-team__card {
+  width: 100%;
   text-align: center;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -745,7 +761,7 @@ img {
 
 .team-section__img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -763,6 +779,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
+  margin: -15px;
 }
 
 .clients-section .section-title {
